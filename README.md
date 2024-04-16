@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Audio Probe - (Flutter)
 
 Audio Probe is a cutting-edge healthcare application that leverages advanced speech analysis technology to provide valuable insights into vocal health and performance. This repository contains the frontend codebase of the Audio Probe application, built using the Flutter framework.
@@ -16,3 +17,4 @@ Audio Probe is a cutting-edge healthcare application that leverages advanced spe
 - **Provider:** State management library for managing application state efficiently.
 - **Dio:** HTTP client for making network requests and communicating with the backend server.
 - **Other Packages:** Various other Flutter packages used for UI components, networking, and more (see `pubspec.yaml` for details).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
