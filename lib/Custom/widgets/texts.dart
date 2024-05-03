@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../values/values.dart';
+import '../../Values/values.dart';
 
 class Texts {
-
   static Text badge(
-      text, {
-        Color color = AppColors.black,
-      }) {
+    text, {
+    Color color = AppColors.black,
+  }) {
     return Text(text,
         style: GoogleFonts.roboto(
           fontSize: 14.0,
@@ -25,6 +24,7 @@ class Texts {
           fontStyle: FontStyle.normal,
         ));
   }
+
   static Text extraLarge(text, {Color color = AppColors.black}) {
     return Text(text,
         style: GoogleFonts.roboto(
@@ -114,7 +114,8 @@ class Texts {
     EdgeInsetsGeometry? margin,
   }) {
     return Container(
-      decoration: Decorations.boxDecorationColorBorder(color: Colors.red.shade200, borderRadius: borderRadius),
+      decoration: Decorations.boxDecorationColorBorder(
+          color: Colors.red.shade200, borderRadius: borderRadius),
       padding: const EdgeInsets.all(8.0),
       margin: const EdgeInsets.all(4.0),
       child: Text(text,
@@ -126,7 +127,6 @@ class Texts {
           )),
     );
   }
-
 
   static Text smallBold(text, {Color color = AppColors.black, maxLines}) {
     return Text(text,
@@ -157,7 +157,8 @@ class Texts {
       EdgeInsetsGeometry? margin}) {
     return Container(
       margin: margin,
-      decoration: Decorations.boxDecorationColorBorder(color: bgColor, borderRadius: borderRadius),
+      decoration: Decorations.boxDecorationColorBorder(
+          color: bgColor, borderRadius: borderRadius),
       // padding: Dimensions.padding_symmetric_6_2,
       child: Text(text,
           maxLines: maxLines,
@@ -186,7 +187,8 @@ class Texts {
     maxLines,
   }) {
     return Container(
-      decoration: Decorations.boxDecorationColorBorder(color: bgColor, borderRadius: borderRadius),
+      decoration: Decorations.boxDecorationColorBorder(
+          color: bgColor, borderRadius: borderRadius),
       // padding: Dimensions.padding_symmetric_6_2,
       child: Text(text,
           maxLines: maxLines,

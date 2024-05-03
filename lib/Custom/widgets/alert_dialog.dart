@@ -1,6 +1,6 @@
 import 'package:audio_probe/Custom/texts.dart';
 import 'package:flutter/material.dart';
-import '../../values/values.dart';
+import '../../Values/values.dart';
 import 'custom_textbutton.dart';
 
 class CustomDialog extends StatelessWidget {

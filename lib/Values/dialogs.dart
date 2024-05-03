@@ -1,7 +1,7 @@
 import '../Custom/ctext.dart';
 import '../Custom/texts.dart';
 import '../Navigation/nav.dart';
-import '../values/values.dart';
+import '../Values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:lottie/lottie.dart';

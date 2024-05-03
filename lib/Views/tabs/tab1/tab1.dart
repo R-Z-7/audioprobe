@@ -105,7 +105,6 @@ class _Tab1State extends State<Tab1> {
                     borderRadius: BorderRadius.circular(14)),
                 elevation: 3,
                 child: Container(
-                    height: 120,
                     width: size.width,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
@@ -119,67 +118,69 @@ class _Tab1State extends State<Tab1> {
                           stops: const [0.0, 1.0],
                           tileMode: TileMode.clamp),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Good Day 👋",
-                              style: GoogleFonts.lato(
-                                color: AppColors.white10.withOpacity(.6),
-                                fontWeight: FontWeight.w600,
-                                fontSize: 20,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 6,
-                            ),
-                            Column(children: [
-                              AutoSizeText(
-                                name,
-                                style: GoogleFonts.montserrat(
-                                  color: AppColors.white10,
-                                  fontStyle: FontStyle.italic,
-                                  fontWeight: FontWeight.bold,
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Good Day 👋",
+                                style: GoogleFonts.lato(
+                                  color: AppColors.white10.withOpacity(.6),
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 20,
                                 ),
-                                minFontSize: 17,
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 1,
-                              ),
-                            ]),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Row(children: [
-                              Expanded(
-                                child: Container(
-                                  color: AppColors.dark,
-                                  height: 1.0,
-                                ),
-                              ),
-                              Container(
-                                padding: EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                  color: AppColors.primaryDarkColor,
-                                ),
-                                child: customText(
-                                    text: DateFormat('dd MMMM yyy')
-                                        .format(DateTime.now()),
-                                    id: 1,
-                                    textSize: 19,
-                                    color: AppColors.white),
                               ),
                               SizedBox(
-                                width: 5,
+                                height: 6,
                               ),
-                              Container(
-                                color: AppColors.primaryDarkColor,
-                                width: 10,
-                                height: 33,
+                              Column(children: [
+                                AutoSizeText(
+                                  name,
+                                  style: GoogleFonts.montserrat(
+                                    color: AppColors.white10,
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  minFontSize: 17,
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 1,
+                                ),
+                              ]),
+                              SizedBox(
+                                height: 10,
                               ),
-                            ])
-                          ]),
+                              Row(children: [
+                                Expanded(
+                                  child: Container(
+                                    color: AppColors.dark,
+                                    height: 1.0,
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(5),
+                                  decoration: BoxDecoration(
+                                    color: AppColors.primaryDarkColor,
+                                  ),
+                                  child: customText(
+                                      text: DateFormat('dd MMMM yyy')
+                                          .format(DateTime.now()),
+                                      id: 1,
+                                      textSize: 19,
+                                      color: AppColors.white),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Container(
+                                  color: AppColors.primaryDarkColor,
+                                  width: 10,
+                                  height: 33,
+                                ),
+                              ])
+                            ]),
+                      ),
                     )),
               ),
               Row(
