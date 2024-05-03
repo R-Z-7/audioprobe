@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../values/values.dart';
+import '../../Values/values.dart';
 
 class CustomTextButton extends StatelessWidget {
   final String title;

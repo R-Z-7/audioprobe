@@ -3,9 +3,9 @@
 part of Values;
 
 class StringConst {
-  static const String baseUrl =
-      "https://audioprobe-8564ebe8f3b8.herokuapp.com/api/";
-  // static const String baseUrl = "http://192.168.0.208:3000/api/";
+  // static const String baseUrl =
+  // "https://audioprobe-8564ebe8f3b8.herokuapp.com/api/";
+  static const String baseUrl = "http://192.168.0.29:3000/api/";
 
   //version
   static const String getVersion = "getVersion";

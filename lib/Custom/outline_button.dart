@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../values/values.dart';
+import '../Values/values.dart';
 
 class ButtonOutlined extends StatelessWidget {
   final String title;

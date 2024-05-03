@@ -3,7 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:flutter/material.dart';
 
-import '../../values/values.dart';
+import '../../Values/values.dart';
 
 class CachedImage {
   static load(String image, BuildContext context, {double? size}) {

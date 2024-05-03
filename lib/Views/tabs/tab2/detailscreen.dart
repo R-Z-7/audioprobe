@@ -200,11 +200,14 @@ class _DetailScreenState extends State<DetailScreen> {
                                 SizedBox(
                                   width: 10,
                                 ),
-                                customText(
-                                  text: "Upload & Analyze",
-                                  id: 1,
-                                  color: AppColors.white,
-                                ),
+                                Flexible(
+                                  child: customText(
+                                    text: "Upload & Analyze",
+                                    id: 1,
+                                    color: AppColors.white,
+                                    textSize: 15,
+                                  ),
+                                )
                               ],
                             )),
                         // SizedBox(
